@@ -65,7 +65,7 @@ newer_versions.each do |v|
   system("cp node_modules/@types/react-native/Devtools.d.ts Devtools.d.ts")
   system("tr -d '\r' < node_modules/@types/react-native/Devtools.d.ts > Devtools.d.ts")
 
-  puts "adding className prop to @types/react-native@#{v}..."
+  puts "adding styleName prop to @types/react-native@#{v}..."
   system("ruby write_classname.rb")
 
   puts "bump package.json version..."
