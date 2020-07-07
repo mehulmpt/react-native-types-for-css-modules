@@ -2210,6 +2210,7 @@ export interface AccessibilityProps
    * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
    */
   accessibilityState?: AccessibilityState;
+  accessibilityStates?: any; // react-native-paper 3.x
   /**
    * An accessibility hint helps users understand what will happen when they perform an action on the accessibility element when that result is not obvious from the accessibility label.
    */
